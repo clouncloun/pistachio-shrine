@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PISTACHIO'S WORLD </title>
+        <!-- 
+        <link href="pistachioshrine.css" rel="stylesheet">
+        -->
+        <script src="pistachioshrine.js"></script>
+    
+    </head>
+
+    <body>
+        <div class="header">
+            <h1 id = "text1">hello. please pay your respects to pistachio</h1>
+            <button id="button" onclick="payRespect();">PAY YOUR RESPECTS.</button>
+        </div>
+        <div class="imgcontainer">
+            <div class="item-candle1">
+                <div class="candlecontainer">
+                    <img class="item-candle1" id="candle1" style="display: none" src="candle1.png"/>
+                </div>
+            </div>
+            <div class="item-candle2">
+                <div class="candlecontainer">
+                    <img class="item-candle2" id="candle2" style="display: none" src="candle2.png"/>
+                </div>
+            </div>
+
+            <div class="item-candle3">
+                <div class="candlecontainer">
+                    <img class="item-candle3" id="candle3" style="display: none" src="candle3.png"/>
+                </div>
+            </div>
+
+            <div class="item-candle4">
+                <div class="candlecontainer">
+                    <img class="item-candle4" id="candle4" style="display: none" src="candle4.png"/>
+                </div>
+            </div>
+
+            <div class="item-candle5">
+                <div class="candlecontainer">
+                    <img class="item-candle5" id="candle5" style="display: none" src="candle5.png"/>
+                </div>
+            </div>
+
+            <div class="item-main">
+                <div class="candlecontainer">
+                    <img id="oldbigpic" src="pistachio.png" alt = "pistachio the magnificent clown"/>
+                </div>
+            </div>
+        </div>
+        <p class="copymight" >imange copymight pistachio incofporated 2003 donot steal peas and love</p>
+        <p class="copymight"> i got the candle pics form gogle images credit 2 all due</p>
+
+    </body>
+
+    <style>
+        .item-main {
+            grid-area: main;
+            position: relative;
+        }
+        .item-candle1 {
+            grid-area: candle1;
+        }
+        .item-candle2 {
+            grid-area: candle2;
+        }
+        .item-candle3 {
+            grid-area: candle3;
+        }
+        .item-candle4 {
+            grid-area: candle4;
+        }
+        .item-candle5 {
+            grid-area: candle5;
+            z-index: 1;
+        }
+
+        .candlecontainer {
+            overflow: hidden;
+        }
+        .candlecontainer img {
+            width: 100%; 
+            display: block;
+        }
+        .imgcontainer {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 400px 200px;
+            grid-template-areas:
+              "candle1 main candle2"
+              "candle4 main candle3"
+              ". candle5 .";
+        }
+        * {
+            background-color: black;
+        }
+        #text1 {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: aliceblue;
+            font-size: large;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            text-align: center;
+        }
+        #bigpic {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+        #button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 15%;
+            color: red
+        }
+        .copymight {
+            color: aliceblue;
+            font-size: small;
+            font-family: cursive;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+
+
+</html>
